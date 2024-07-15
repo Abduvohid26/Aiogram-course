@@ -8,8 +8,8 @@ dp = Dispatcher()
 
 @dp.message(CommandStart())
 async def start_bot(message: types.Message, command: CommandObject):
-    data = command.args
-    print(data)
+    # data = command.args
+    # print(data)
     await bot.send_message(text=f'Assalamu Aleykum {message.from_user.username}', chat_id=message.from_user.id)
 
 
